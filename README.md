@@ -73,8 +73,9 @@ Following images show the training accuracy and training loss for the models exp
 
 ![Figure 9.](images/loss.png)
 
-## Conclusions
+## Summary
 We created a NN model to predict if a funded organization will be successful based on some organization’s features. We created a base model and then tried to optimize it by adding more nodes,more hidden layers , different activation functions and the combination of those. We compared the evaluation results and the training accuracy and loss for five different designs. Adding more layers and changing the activation function shows improvement(Model_4). However, when we added more layers to Model_4 (Model_5), we did not see any visible improvement. The best model here is Model_4 with the following summary:
     
 ![Figure9.](images/model4_summary.png)
+
 
