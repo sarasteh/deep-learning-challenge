@@ -29,7 +29,7 @@ The final step is scaling data using StandardScaler.
 > ### Compile, Train, and Evaluate the Model
 
 After cleaning and encoding the categorical variables, we have 43 features to use as inputs for our neural network model. The very first model is designed as shown in the following Figure (input nodes: 43, first layer nodes:80, second layer nodes:30, output node:1). Activation function for Input and hidden layers is ‘relu’ and for the output layer is ‘sigmoid’.
-Parameters used to fit the models are: batch_size=20, epochs=100. We also create a callback that saves the model's weights every five epochs. The final results save and export to an HDF5 file (AlphabetSoupCharity.h5).
+Parameters used to fit the models are: batch_size=20, epochs=100. We also create a callback that saves the model's weights every five epochs. The final results are saved and exported to an HDF5 file (AlphabetSoupCharity.h5).
 
 ![Figure.2](images/firstmodel.png)
 
