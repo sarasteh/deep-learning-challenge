@@ -42,7 +42,7 @@ To Optimize the model we take following steps:
 
 > Dropping 'STATUS',  'SPECIAL_CONSIDERATIONS' columns:
 
-These two columns mostly have a single value, which makes them less useful for our training. They only add more complexity with not much information.
+These two columns mostly have a single value, which makes them less useful for our training. They only add more complexities with not much information.
 The same model, defined in the last section, applied. 
 
 ![Figure.3](images/drop_cols.png)
