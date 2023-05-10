@@ -37,4 +37,43 @@ The evaluation on test data is as follows:
 
 ![Figure.3](images/firstmodel_test.png)
 
+## Optimize the Model
+To Optimize the model we take following steps:
+
+> Dropping 'STATUS',  'SPECIAL_CONSIDERATIONS' columns:
+
+These two columns mostly have a single value, which makes them less useful for our training. They only add more complexity with not much information.
+The same model, defined in the last section, applied. 
+
+![Figure.3](images/drop_cols.png)
+
+> Adding more nodes (Model_2):
+
+The new model is designed as shown in the following image. The number of nodes increases without adding more layers. The training was slower and there were not much differences in the results.
+
+![Figure 4.](images/model2_summary.png)
+
+> Adding more layers:
+
+Here we modify the first design by adding more layers.Model and results shown in the following.
+
+![Figure 5.](images/model3_summary.png)
+
+> Adding more layers and changing activation to ‘tanh’:
+
+![Figure 6.](images/model4_summary.png)
+
+> Adding more layers to Model_5:
+
+![Figure 7.](images/model5_summary.png)
+
+Following images show the training accuracy and training loss for the different models explained above.
+From the graph, Model_5 shows a slightly better accuracy and loss compared to other models. In all models, there are a lot of fluctuations in the accuracy curve. The curve seems to improve very slowly. We tried different numbers for epochs and batch_size which did not make a big differences on the results and evaluation (under 1% improvement)   
+
+![Figure 8.](images/accuracy.png)
+
+![Figure 9.](images/loss.png)
+
+Conclusions
+We create a NN model to predict if a funded organization will be successful based on some organization’s features in the dataset. We created a base model and then try to optimize it by tuning the network. 
 
