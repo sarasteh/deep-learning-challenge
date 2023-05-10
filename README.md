@@ -63,7 +63,7 @@ Here we modify the first design by adding more layers.Model and results shown in
 
 ![Figure 6.](images/model4_summary.png)
 
-> Adding more layers to Model_5:
+> Adding more layers to Model_4:
 
 ![Figure 7.](images/model5_summary.png)
 
